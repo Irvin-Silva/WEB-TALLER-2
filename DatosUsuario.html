@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html xmlns="http://www.uis.edu.co" lang="es" xml:lang="es">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Rellena tu CV</title>
+</head>
+
+<body>
+    <h3>Rellena tu CV</h3>
+    <form action="/cv/dataCV" method="post" enctype="multipart/form-data">
+        Nombre <br />
+        <input type="text" name="nombre" value="" size="20" maxlength="30" />
+        <br />
+        Apellidos <br />
+        <input type="text" name="apellidos" value="" size="50" maxlength="80" />
+        <br />
+        Contraseña <br />
+        <input type="password" name="contrasena" value="" maxlength="10" />
+        <br />
+        Confirme Contraseña <br />
+        <input type="password" name="contrasena" value="" maxlength="10" />
+        <br />
+        Identificación <br />
+        <select name="select">
+            <option value="CC">CC</option>
+            <option value="TI" selected>TI</option>
+            <option value="CE">CE</option>
+        </select>
+        <input type="text" name="idsuj" value="" size="10" maxlength="9" />
+        <br />
+        Sexo <br />
+        <input type="radio" name="sexo" value="hombre" checked="checked" /> Hombre
+        <br />
+        <input type="radio" name="sexo" value="mujer" /> Mujer
+        <br /><br />
+        Incluir mi foto <input type="file" name="foto" />
+        <br /><br />
+        <input name="suscribir" type="checkbox" value="suscribir" checked="checked" />
+        Estudiante....
+        <br /><br />
+        
+        <fieldset>
+            <legend>Datos personales</legend>
+            Departamentos <br />
+            <select name="Departamentos" id="lang">
+                <option value="">-</option>
+                <option value="Arauca">Arauca</option>
+                <option value="Armenia">Armenia</option>
+                <option value="Barranquilla">Barranquilla</option>
+                <option value="Bogotá">Bogotá</option>
+                <option value="Bucaramanga">Bucaramanga</option>
+                <option value="Cali">Cali</option>
+                <option value="Cartagena">Cartagena</option>
+                <option value="Cúcuta">Cúcuta</option>
+                <option value="Florencia">Florencia</option>
+                <option value="Ibagué">Ibagué</option>
+                <option value="Leticia">Leticia</option>
+                <option value="Manizales">Manizales</option>
+                <option value="Medellín">Medellín</option>
+                <option value="Mitú">Mitú</option>
+                <option value="Mocoa">Mocoa</option>
+                <option value="Montería">Montería</option>
+                <option value="Neiva">Neiva</option>
+                <option value="Pasto">Pasto</option>
+                <option value="Pereira">Pereira</option>
+                <option value="Popayán">Popayán</option>
+                <option value="Puerto Carreño">Puerto Carreño</option>
+                <option value="Puerto Inírida">Puerto Inírida</option>
+                <option value="Quibdó">Quibdó</option>
+                <option value="Riohacha">Riohacha</option>
+                <option value="San Andrés">San Andrés</option>
+                <option value="San José del Guaviare">San José del Guaviare</option>
+                <option value="Santa Marta">Santa Marta</option>
+                <option value="Sincelejo">Sincelejo</option>
+                <option value="Tunja">Tunja</option>
+                <option value="Valledupar">Valledupar</option>
+                <option value="Villavicencio">Villavicencio</option>
+                <option value="Yopal">Yopal</option>
+            </select>
+            <br />
+            <br />
+            Fecha de nacimiento <br />
+            <input type="text" name="dia" value="" size="1" maxlength="2" />
+            de
+            <select name="mes">
+                <option value="1">Enero</option>
+                <option value="2">Febrero</option>
+                <option value="3">Marzo</option>
+                <option value="4">Abril</option>
+                <option value="5">Mayo</option>
+                <option value="6">Junio</option>
+                <option value="7">Julio</option>
+                <option value="8">Agosto</option>
+                <option value="9">Septiembre</option>
+                <option value="10">Octubre</option>
+                <option value="11">Noviembre</option>
+                <option value="12">Diciembre</option>
+            </select>
+            de
+            <input type="text" name="año" value="" size="1" maxlength="2" />
+            <br />
+            <br />
+            Temas de interés
+            <select name="temas" id="temas">
+                <optgroup label="Gestion de proyectos">
+                    <option value="Análisis de viabilidad del proyecto">Análisis de viabilidad del proyecto</option>
+                    <option value="Seguimiento y control del trabajo">Seguimiento y control del trabajo</option>
+                </optgroup>
+                <optgroup label="Hardware, redes y seguridad">
+                    <option value="Procesador">Procesador</option>
+                    <option value="Hardware de entrada o input">Hardware de entrada o input</option>
+                </optgroup>
+                <optgroup label="Helpdesk">
+                    <option value="ITIL-based">ITIL-based</option>
+                    <option value="360 ITIL">360 ITIL</option>
+                </optgroup>
+            </select>
+            <br />
+        </fieldset>
+        <br />
+        <input type="submit" name="enviar" value="Guardar cambios" />
+        <input type="reset" name="limpiar" value="Borrar los datos introducidos" /> 
+    </form>
+</body>
+
+</html>
